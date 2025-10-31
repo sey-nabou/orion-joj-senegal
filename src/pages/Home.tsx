@@ -28,7 +28,7 @@ const Home = () => {
         <main className="flex-1 flex flex-col items-center justify-center px-6 pb-20">
           <div className="w-full max-w-md space-y-8 animate-fade-in">
             {/* Logo */}
-            <div className="flex justify-center">
+            <div className="flex justify-center pt-8">
               <img 
                 src={orionLogo} 
                 alt="ORION Logo" 
