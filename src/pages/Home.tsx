@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { AlertCircle, User } from "lucide-react";
+import { AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { buttonVariants } from "@/components/ui/button-variants";
 import orionLogo from "@/assets/orion-logo.png";
@@ -24,14 +24,6 @@ const Home = () => {
 
       {/* Content */}
       <div className="relative z-10 flex-1 flex flex-col">
-        {/* Header */}
-        <header className="p-4 flex justify-end">
-          <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-            <User className="w-5 h-5 text-white" />
-            <span className="text-white font-medium text-sm">Fatou Ba</span>
-          </div>
-        </header>
-
         {/* Main Content */}
         <main className="flex-1 flex flex-col items-center justify-center px-6 pb-20">
           <div className="w-full max-w-md space-y-8 animate-fade-in">
