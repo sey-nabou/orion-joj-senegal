@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { AlertCircle } from "lucide-react";
+import { AlertCircle, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { buttonVariants } from "@/components/ui/button-variants";
 import orionLogo from "@/assets/orion-logo.png";
@@ -49,8 +49,8 @@ const Home = () => {
               </p>
             </div>
 
-            {/* Main CTA Button */}
-            <div className="pt-8">
+            {/* Main CTA Buttons */}
+            <div className="pt-8 space-y-4">
               <Button
                 onClick={() => navigate("/report")}
                 className={buttonVariants({ variant: "alert", size: "lg" })}
@@ -58,6 +58,15 @@ const Home = () => {
               >
                 <AlertCircle className="w-6 h-6" />
                 Signaler un incident
+              </Button>
+              
+              <Button
+                onClick={() => navigate("/ai-chat")}
+                className={buttonVariants({ variant: "hero", size: "lg" })}
+                size="lg"
+              >
+                <MessageSquare className="w-6 h-6" />
+                Discuter avec ORION (IA)
               </Button>
             </div>
 

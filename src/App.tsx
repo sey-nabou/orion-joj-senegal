@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Report from "./pages/Report";
+import AIChat from "./pages/AIChat";
 import Confirmation from "./pages/Confirmation";
 import History from "./pages/History";
 import NotFound from "./pages/NotFound";
@@ -20,6 +21,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/report" element={<Report />} />
+          <Route path="/ai-chat" element={<AIChat />} />
           <Route path="/confirmation" element={<Confirmation />} />
           <Route path="/history" element={<History />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
