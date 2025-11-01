@@ -212,14 +212,14 @@ Confirmez-vous l'envoi de ce signalement ?`;
           setIsTyping(false);
 
           // Sauvegarder dans localStorage
-          const reports = JSON.parse(localStorage.getItem("reports") || "[]");
+          const reports = JSON.parse(localStorage.getItem("orion-reports") || "[]");
           reports.push({
-            id: Date.now(),
+            id: Date.now().toString(),
             ...incidentData,
-            date: new Date().toISOString(),
-            status: "pending",
+            timestamp: new Date().toISOString(),
+            status: "En attente",
           });
-          localStorage.setItem("reports", JSON.stringify(reports));
+          localStorage.setItem("orion-reports", JSON.stringify(reports));
 
           toast.success("Signalement enregistré avec succès");
 
